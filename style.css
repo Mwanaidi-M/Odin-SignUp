@@ -1,0 +1,206 @@
+:root
+{
+    --logo-font: 'Great Vibes', cursive;
+    --text-font: 'M PLUS Rounded 1c', sans-serif;
+    /* Image link:
+        https://images.unsplash.com/photo-1572883454114-1cf0031ede2a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80
+        https://images.unsplash.com/photo-1551038247-3d9af20df552?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80
+        https://images.unsplash.com/photo-1525376756582-bb54d32d1315?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80
+    */
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    min-height: 100vh;
+    /* background: linear-gradient(120deg, #507DBC, #DAE3E5); */
+}
+
+main
+{
+    /* border: 2px solid orange; */
+    width: 80%;
+    height: auto;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+a
+{
+    text-decoration: none;
+    color: rgb(217,87,8);
+}
+span
+{
+    font-style: italic;
+    font-weight: 700;
+}
+sup
+{
+    color: #FF4365;
+    font-size: 1rem;
+}
+.sect1
+{
+    /* border: 1px solid red; */
+    /* width: 40%; */
+    /* width: 600px; */
+    /* height: auto; */
+    flex: 2;
+    background-image: url('https://images.unsplash.com/photo-1525376756582-bb54d32d1315?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo-sect
+{
+    background-color: rgba(252,128,1, .4);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-sect p
+{
+    font-family: var(--logo-font);
+    font-size: 4rem;
+    color: #f7f8fa;
+    /* letter-spacing: 5px; */
+}
+.sect2
+{
+    /* border: 2px solid green; */
+    /* background-color: #fdfcfa; */
+    /* width: 60%; */
+    /* width: 1000px; */
+    /* height: auto; */
+    flex: 3;
+    font-family: var(--text-font);
+    padding-left: 40px;
+}
+.sect-txt
+{
+    /* background-color: #BBD1EA; */
+    padding: 90px 120px 20px 0px;
+    font-size: 1.1rem;
+    /* font-weight: bold; */
+}
+.sect-txt p:first-child
+{
+    margin-bottom: 30px;
+}
+form
+{
+    /* border: 2px solid red; */
+    margin-bottom: 30px;
+    /* height: 40%; */
+}
+label
+{
+    font-size: .8em;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+form h3
+{
+    margin: 20px 0;
+    /* padding-left: 20px; */
+    font-size: 1.3rem;
+}
+input,
+button
+{
+    -webkit-appearance: none;
+    appearance: none;
+}
+input
+{
+    width: 100%;
+    outline: none;
+    border: 2px solid rgba(119,132,140,.4);
+    border-radius: 5px;
+    padding: 8px;
+
+}
+input:focus
+{
+    border-color: rgba(119,132,140,1);
+}
+button
+{
+    width: 200px;
+    padding: 10px 0px;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: transparent;
+    margin: 10px 0px;
+    background-color: #4f606e;
+    color:#f7f8fa;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+button:hover
+{
+    background-color: #f7f8fa;
+    color: #4f606e;
+    box-shadow: 2px 2px 2px rgba(119,132,140,1);
+}
+.form-fields
+{
+    padding: 20px 0px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* row-gap: 5px; */
+    box-shadow: 2px 3px 3px #CACFD6;
+}
+.f-field
+{
+    /* border: 1px solid orange; */
+    width: 400px;
+    padding: 5px;
+}
+.sect2 p
+{
+    /* border: 2px solid red; */
+    /* padding-left: 40px; */
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width:769px) {
+    main
+    {
+        flex-direction: column;
+    }
+    .sect2
+    {
+        width: 100%;
+        padding: 20px;
+    }
+    .sect-txt
+    {
+        padding: 20px 10px;
+    }
+    .form-fields
+    {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    .f-field
+    {
+        width: 100%;
+    }
+}
